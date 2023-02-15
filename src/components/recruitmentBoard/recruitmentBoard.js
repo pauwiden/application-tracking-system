@@ -27,7 +27,9 @@ function RectuitmentBoard(props) {
     if (searchTerm) {
       filtered = filtered.filter(
         (candidate) =>
-          candidate.firstName.toLowerCase().includes(searchTerm.toLowerCase()) ||
+          candidate.firstName
+            .toLowerCase()
+            .includes(searchTerm.toLowerCase()) ||
           candidate.lastName.toLowerCase().includes(searchTerm.toLowerCase()) ||
           candidate.email.toLowerCase().includes(searchTerm.toLowerCase())
       );

@@ -6,12 +6,16 @@ import "./recruitmentStep.scss";
 
 function RecruitmentStep(props) {
   const [dropArea, setDropArea] = useState([]);
-  const [{ isOver}, dropRef] = useDrop({
+  const [{ isOver }, dropRef] = useDrop({
     accept: "candidate",
     drop: (item) =>
       setDropArea((dropArea) =>
         !dropArea.includes(item)
-          ? [...dropArea, item, updateCandidateProcessStep(item.props.candidate, props.step.id)]
+          ? [
+              ...dropArea,
+              item,
+              updateCandidateProcessStep(item.props.candidate, props.step.id),
+            ]
           : dropArea
       ),
     collect: (monitor) => ({
@@ -21,9 +25,9 @@ function RecruitmentStep(props) {
 
   const updateCandidateProcessStep = (candidate, step) => {
     console.log(candidate, props);
-    apiService.updateProcessStep(candidate, step).then(
-        window.location.reload(false)
-    );
+    apiService
+      .updateProcessStep(candidate, step)
+      .then(window.location.reload(false));
   };
 
   return (
@@ -32,10 +36,7 @@ function RecruitmentStep(props) {
         <h2>{props.step.stepName}</h2>
         {props.candidates.map((candidate, index) => (
           <div key={index}>
-            <CandidateCard
-              draggable
-              candidate={candidate}
-            ></CandidateCard>
+            <CandidateCard draggable candidate={candidate}></CandidateCard>
           </div>
         ))}
         {isOver}
