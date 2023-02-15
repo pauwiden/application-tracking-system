@@ -7,6 +7,5 @@ Go to /application-tracking-system
  - npm install
  - npm start
 
- If you have a mac computer you might need to go to package.json in the root, 
- and change "start": "set PORT=3006 && react-scripts start" 
- to "start": "set PORT=3006 react-scripts start",
+ If you have a mac computer and npm start does not correctly change the port to 3006, 
+ try the "npm start-mac" command instead.
