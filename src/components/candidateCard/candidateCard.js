@@ -28,7 +28,7 @@ function CandidateCard(props) {
               {props.candidate.street}, {props.candidate.zipCode}
             </p>
             <p className="card-text">{props.candidate.town}</p>
-            <p className="card-text">{props.candidate.age}, år</p>
+            <p className="card-text">{props.candidate.age} år</p>
           </div>
         </div>
         {isDragging}
