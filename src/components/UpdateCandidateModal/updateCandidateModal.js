@@ -34,7 +34,7 @@ function UpdateCandidateModal(props) {
   return (
     <>
       <a onClick={handleShow}>
-        <img src="Edit_icon.png" />
+        <img alt="edit icon" src="Edit_icon.png" />
       </a>
       <Modal show={show} onHide={handleClose}>
         <Modal.Header closeButton>
@@ -101,7 +101,11 @@ function UpdateCandidateModal(props) {
             <Button className="button" variant="primary" type="submit">
               Spara
             </Button>
-            <Button className="button" onClick={deleteCandidate} variant="primary">
+            <Button
+              className="button"
+              onClick={deleteCandidate}
+              variant="primary"
+            >
               Ta bort kandidat
             </Button>
           </Form>
