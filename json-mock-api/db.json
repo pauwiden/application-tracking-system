@@ -1,0 +1,59 @@
+{
+  "candidates": [
+    {
+      "id": 1,
+      "firstName": "Lisa",
+      "lastName": "Hansson",
+      "email": "lisalisa@abc.com",
+      "age": "33",
+      "street": "Hökgatan 2",
+      "town": "Malmö",
+      "zipCode": "324 54",
+      "processStep": 4
+    },
+    {
+      "id": 2,
+      "firstName": "Hans",
+      "lastName": "Berggren",
+      "email": "hasse1000best@abc.com",
+      "age": "25",
+      "street": "Hejgatan 42",
+      "town": "Linköping",
+      "zipCode": "223 76",
+      "processStep": 5
+    },
+    {
+      "id": 3,
+      "firstName": "Liam",
+      "lastName": "Hansson",
+      "email": "limme@abc.com",
+      "age": "18",
+      "street": "Gatgatan 52",
+      "town": "Alvesta",
+      "zipCode": "223 76",
+      "processStep": 4
+    },
+    {
+      "id": 4,
+      "firstName": "Juno",
+      "lastName": "Heim",
+      "email": "juno123@abc.com",
+      "age": "41",
+      "street": "Hammarvägen 6",
+      "town": "Skurup",
+      "zipCode": "843 74",
+      "processStep": 3
+    },
+    {
+      "id": 5,
+      "firstName": "Sandra",
+      "lastName": "Karlsson",
+      "email": "hejhejhej@gmail.com",
+      "age": "54",
+      "street": "Nobelvägen 64",
+      "town": "Malmö",
+      "zipCode": "21433",
+      "processStep": 1
+    }
+  ]
+}
