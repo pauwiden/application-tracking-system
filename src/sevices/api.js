@@ -19,11 +19,9 @@ class ApiService {
     );
   }
   async addCandidate(candidate) {
-    console.log(candidate);
     await axios.post(`http://localhost:3000/candidates`, candidate);
   }
   async deleteCandidate(candidateId) {
-    console.log(candidateId);
     await axios.delete(`http://localhost:3000/candidates/${candidateId}`);
   }
 }

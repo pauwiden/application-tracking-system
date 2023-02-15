@@ -24,7 +24,6 @@ function RecruitmentStep(props) {
   });
 
   const updateCandidateProcessStep = (candidate, step) => {
-    console.log(candidate, props);
     apiService
       .updateProcessStep(candidate, step)
       .then(window.location.reload(false));

@@ -21,7 +21,6 @@ function AddCandidateModal(props) {
       processStep: 1,
     };
 
-    console.log(candidate);
     apiService.addCandidate(candidate).then(window.location.reload(false));
   };
   return (
