@@ -8,4 +8,4 @@ Go to /application-tracking-system
  - npm start
 
  If you have a mac computer and npm start does not correctly change the port to 3006, 
- try the "npm start-mac" command instead.
+ try the "npm run start-mac" command instead.
